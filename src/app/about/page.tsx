@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  FaHtml5, FaCss3, FaJs, FaFigma, FaNodeJs,
+  FaHtml5, FaCss3, FaFigma,
   FaCode, FaDesktop,
 } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
