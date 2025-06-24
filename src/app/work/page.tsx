@@ -31,7 +31,7 @@ const projects: Project[] = [
   },
   {
     id: 1,
-    title: "EasyBuy – Multi-Vendor Marketplace Solution",
+    title: "EasyBuy Multi-Vendor Marketplace Solution",
     desc: "A hackathon project built using Nextjs, Sanity, and Tailwind CSS to create a marketplace platform.",
     image: "/Furniture2.PNG",
     tags: [
