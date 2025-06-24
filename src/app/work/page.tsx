@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Image from "next/image"; // ✅ IMPORTED Next.js Image
 
 interface ProjectTag {
   name: string;
@@ -30,7 +31,7 @@ const projects: Project[] = [
   },
   {
     id: 1,
-    title: "EasyBuy Marketplace Builder Hackathon",
+    title: "EasyBuy – Multi-Vendor Marketplace Solution",
     desc: "A hackathon project built using Nextjs, Sanity, and Tailwind CSS to create a marketplace platform.",
     image: "/Furniture2.PNG",
     tags: [
@@ -38,7 +39,7 @@ const projects: Project[] = [
       { name: "GitHub", href: "https://github.com/aliza-moin18/EasyBuy-Marketplace-Builder-Hackathon" }
     ],
   },
-  {
+    {
     id: 2,
     title: "Blog Website",
     desc: "A TechWorld blog website built with Nextjs and Tailwind CSS. The blog allows users to post articles and explore different topics.",
@@ -51,7 +52,9 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Admin Dashboard",
-    desc: "An admin dashboard for managing marketplace data, built with Next.js, Tailwind CSS, and Sanity CMS. It includes features for viewing, updating, and organizing products and categories.",
+    desc: `An admin dashboard for managing marketplace data, built with Next.js, Tailwind CSS  and Sanity CMS. 
+Demo Login: =>  Email: admin@admin.com
+Password: password`,
     image: "/admin4.PNG",
     tags: [
       { name: "Live Demo", href: "https://easy-buy-marketplace-admin-dashboard.vercel.app/" },
@@ -110,13 +113,12 @@ const projects: Project[] = [
   },
 ];
 
-// 🔁 Smaller dots generator
 const generateDots = (count = 60) =>
   Array.from({ length: count }, (_, i) => ({
     id: i,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    size: Math.random() * 2 + 4, // ✅ smaller size: 4–6px
+    size: Math.random() * 2 + 4,
     duration: Math.random() * 5 + 3,
     delay: Math.random() * 5,
     color: i % 2 === 0 ? "bg-white" : "bg-pink-400",
@@ -131,7 +133,7 @@ const Projects = () => {
 
   return (
     <section className="min-h-[70vh] py-16 relative overflow-hidden bg-black text-[#f5f3ee]">
-      {/* Animated Dots */}
+      {/* Background Dots */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {dots.map((dot) => (
           <motion.div
@@ -143,7 +145,7 @@ const Projects = () => {
               left: `${dot.x}%`,
               top: `${dot.y}%`,
               opacity: 0.5,
-              filter: "blur(0.8px)", // ✅ softer blur
+              filter: "blur(0.8px)",
             }}
             animate={{ y: ["0%", "-150%"] }}
             transition={{
@@ -157,7 +159,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Content */}
+      {/* Projects Grid */}
       <div className="container mx-auto px-6 lg:px-20 relative z-10">
         <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-14">
           My Projects
@@ -176,12 +178,18 @@ const Projects = () => {
               className="group bg-[#282828] text-[#f5f3ee] rounded-xl shadow-md overflow-hidden border border-[#b3b4b0]/20 hover:border-[#ed6094] hover:shadow-[0_0_20px_#ed6094aa] transition-all duration-300"
             >
               {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="relative w-full h-48">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    priority
+                  />
+                </div>
               )}
+
               <div className="p-6">
                 <h3 className="text-lg font-bold mb-2 group-hover:text-[#ed6094] transition-colors">
                   {project.title}
