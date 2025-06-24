@@ -10,13 +10,13 @@ import Services from "./services/page";
 import Contact from "./contact/page";
 import { motion } from "framer-motion";
 
-// Reuse the same floating dot logic as Services
+// Floating dots logic
 const generateDots = (count = 80) =>
   Array.from({ length: count }, (_, i) => ({
     id: i,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    size: Math.random() * 2 + 4, // 4px–6px
+    size: Math.random() * 2 + 4,
     duration: Math.random() * 5 + 3,
     delay: Math.random() * 5,
     color: i % 2 === 0 ? "bg-white" : "bg-pink-400",
@@ -31,9 +31,9 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero Section with glass effect + floating dots */}
+      {/* Hero Section */}
       <section className="min-h-screen py-28 pb-20 relative overflow-hidden bg-black text-white">
-        {/* Floating Background Dots (same as Services) */}
+        {/* Floating dots background */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {dots.map((dot) => (
             <motion.div
@@ -59,15 +59,15 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Hero Content with glass-style box */}
+        {/* Hero Content */}
         <div className="relative z-10 max-w-3xl mx-auto px-6 flex flex-col items-center justify-center text-center backdrop-blur-sm bg-[#111111cc] border border-[#333] rounded-2xl shadow-lg p-10">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.9 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6"
+            className="text-4xl xl:text-6xl font-extrabold leading-tight mb-6"
           >
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-[#ed6094] via-[#bd1ce1] to-[#f5f3ee] text-transparent bg-clip-text">
               Aliza Moin
             </span>
@@ -77,20 +77,19 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="text-lg md:text-xl text-[#ccc] leading-relaxed mb-8"
+            className="text-gray-300 mb-8 leading-relaxed text-lg"
           >
-            A passionate full-stack developer crafting seamless digital
-            experiences. Clean code, scalable architecture, and creative design.
+            Full-stack developer with a product mindset — I design scalable systems, write clean, maintainable code, and turn business goals into elegant digital solutions.
           </motion.p>
 
-          {/* CTA + Social */}
+          {/* CTA and Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1 }}
             className="flex flex-col sm:flex-row gap-5 items-center"
           >
-            <a href="/Aliza CV.pdf">
+            <a href="/Aliza CV.pdf" download>
               <Button
                 variant="outline"
                 size="lg"
@@ -108,7 +107,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Other Pages */}
+      {/* Page Sections */}
       <About />
       <Projects />
       <Services />
