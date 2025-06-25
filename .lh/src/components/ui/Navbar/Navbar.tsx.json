@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/ui/Navbar/Navbar.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731171406901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731171406901,
+            "name": "Commit-0",
+            "content": "\"use client\"\r\n\r\nimport Link from \"next/link\"\r\nimport { usePathname } from \"next/navigation\"\r\n\r\n\r\nconst Links = [\r\n    {\r\n        name: \"home\",\r\n        path: '/',\r\n    },\r\n    {\r\n        name: \"About Me\",\r\n        path: \"/about\",\r\n    },\r\n    {\r\n        name: \"Services\",\r\n        path: \"/services\",\r\n    },\r\n    {\r\n        name: \"Work\",\r\n        path: \"/work\",\r\n    },\r\n    {\r\n        name: \"Contact\",\r\n        path: \"/contact\",\r\n    },\r\n];\r\n\r\nconst Nav = () => {\r\n    const pathname = usePathname();\r\n    console.log(pathname);\r\n  return (\r\n    <nav className=\"flex gap-12\">  \r\n        {Links.map((LinkItem, index) => {\r\n             const isActive = pathname === LinkItem.path;\r\n           return (\r\n        <Link href={LinkItem.path} key={index}\r\n            className={${isActive ? \"text-white border-b-2 border-purple\" : \"\"} capitalize text-[17px] hover:text-white transition-all}>\r\n          {LinkItem.name}\r\n        </Link>\r\n\r\n        );\r\n    })}\r\n    </nav>\r\n  );\r\n};\r\n\r\nexport default Nav;"
+        }
+    ]
+}

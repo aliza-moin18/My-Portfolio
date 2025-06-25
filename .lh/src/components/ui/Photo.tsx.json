@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/ui/Photo.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1731202138335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731241557971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n     <Image\r\n       src=\"/profile.jpg\r\n       \r\n-      \"\r\n+   \"\r\n       priority\r\n       quality={100}\r\n       fill\r\n       alt=\"\"\r\n"
+                }
+            ],
+            "date": 1731202138335,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\nimport { motion } from \"framer-motion\";\r\nimport Image from \"next/image\";\r\n\r\nconst Photo = () => {\r\n  return (\r\n   <div className=\"w-[425px] h-[410px] relative overflow-hidden mr-12\">\r\n      <motion.div\r\n         initial={{ opacity: 0 }}\r\n         animate={{\r\n            opacity: 1,\r\n            transition: { delay: 1, duration: 0.4, ease: \"easeIn\"}\r\n        }}\r\n        >\r\n      <motion.div \r\n         initial={{ opacity: 0 }}\r\n         animate={{\r\n            opacity: 1,\r\n            transition: { delay: 2.4, duration: 0.8, ease: \"easeInOut\"}\r\n        }}\r\n         className=\"w-[79%] h-[190%] xl:w-[480px] xl:h-[480px] mix-blend-lighten\">\r\n\r\n    <Image\r\n      src=\"/profile.jpg\"\r\n      priority\r\n      quality={100}\r\n      fill\r\n      alt=\"\"\r\n      className=\"object-cover rounded-[20px]\"\r\n      />\r\n    </motion.div>\r\n\r\n    <motion.div\r\n        className=\"absolute inset-0 rounded-[200px] border-8 border-[#a131af] opacity-30\"\r\n        style={{\r\n        boxShadow: \"0px 0px 20px 10px rgba(191, 65, 229, 0.5)\",\r\n      }}\r\n      animate={{\r\n      opacity: [0.3, 0.5, 0.7, 0.5, 0.3],\r\n      transition: {\r\n      repeat: Infinity,\r\n      duration: 2.5,\r\n      ease: \"easeInOut\",\r\n       },\r\n     }}\r\n     ></motion.div>\r\n    \r\n  </motion.div>\r\n</div>\r\n \r\n   );\r\n};\r\n\r\nexport default Photo;"
+        }
+    ]
+}

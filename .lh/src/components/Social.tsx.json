@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Social.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731178693995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731178693995,
+            "name": "Commit-0",
+            "content": "import Link from \"next/link\";\r\nimport { FaGithub, FaLinkedinIn } from \"react-icons/fa\";\r\n\r\n\r\nconst defaultSocials = [\r\n  { icon: <FaGithub/>, path: \"https://github.com/aliza-moin18\" },\r\n  { icon: <FaLinkedinIn style={{ color: \"#0A66C2\"}} />, path: \"https://www.linkedin.com/in/aliza-moin-b975a6276/\" },\r\n];\r\n\r\nconst Social = ({ containerStyles = \"\", iconStyles = \"\", socials = defaultSocials }) => {\r\n  return (\r\n    <div className={containerStyles}>\r\n      {socials.map((item, index) => {\r\n        return (\r\n          <Link key={index} href={item.path} className={iconStyles}>\r\n            {item.icon}\r\n          </Link>\r\n        );\r\n      })}\r\n    </div>\r\n  );\r\n};\r\n \r\nexport default Social;"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "sourceFile": "src/components/ui/MobileNav.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1731172597991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731172631198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\r\n+\r\n+import React from 'react'\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  )\r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172636491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\"\r\n+\r\n+import React from 'react'\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  )\r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172647759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import Sheet\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  )\r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172654681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,11 @@\n \"use client\";\r\n \r\n-import Sheet\r\n+import { Sheet, \r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n   )\r\n }\r\n \r\n-export default MobileNav\n-\"use client\"\r\n-\r\n-import React from 'react'\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  )\r\n-}\r\n-\r\n-export default MobileNav\n-\r\n-\r\n-import React from 'react'\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  )\r\n-}\r\n-\r\n-export default MobileNav\n\\ No newline at end of file\n-rafce\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172666170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \"use client\";\r\n \r\n-import { Sheet, \r\n+import { Sheet, SheetConte\r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n"
+                },
+                {
+                    "date": 1731172674481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \"use client\";\r\n \r\n-import { Sheet, SheetConte\r\n+import { Sheet, SheetContent, SheetTrih=\r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n"
+                },
+                {
+                    "date": 1731172682647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \"use client\";\r\n \r\n-import { Sheet, SheetContent, SheetTrih=\r\n+import { Sheet, SheetContent, SheetTrigger\r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n"
+                },
+                {
+                    "date": 1731172689419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  )\r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172709008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from @/compo\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172730576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from @/componets\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172737907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from @/components/ui/\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172743819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from @/components/ui/sheet\";\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172772357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import \r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172779997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usepathname}\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172797838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname }\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172804659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,102 +1,12 @@\n \"use client\";\r\n \r\n import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n-import { usePathname }\r\n+import { usePathname } from \"@\"\r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n   ) \r\n }\r\n \r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n-import { usepathname}\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n-import \r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from @/components/ui/sheet\";\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from @/components/ui/\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from @/componets\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from @/compo\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  ) \r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger } from\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  )\r\n-}\r\n-\r\n-export default MobileNav\n-\"use client\";\r\n-\r\n-import { Sheet, SheetContent, SheetTrigger\r\n-\r\n-const MobileNav = () => {\r\n-  return (\r\n-    <div>MobileNav</div>\r\n-  )\r\n-}\r\n-\r\n export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172816569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/\"\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172823201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\"\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172854984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+imo\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172862715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+imopo\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172873869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Li\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172883722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Link from \"next/link\";\r\n+import\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172891763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Link from \"next/link\";\r\n+import {}\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172897661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Link from \"next/link\";\r\n+import { Ci}\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172906605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Link from \"next/link\";\r\n+import { CiMe}\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731172914403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n import { usePathname } from \"next/navigation\";\r\n import Link from \"next/link\";\r\n-import { CiMenu}\r\n+import { CiMenuFries }\r\n \r\n const MobileNav = () => {\r\n   return (\r\n     <div>MobileNav</div>\r\n"
+                },
+                {
+                    "date": 1731172934228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\"use client\";\r\n+\r\n+import { Sheet, SheetContent, SheetTrigger } from \"@/components/ui/sheet\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import Link from \"next/link\";\r\n+import { CiMenuFries } from \"\"\r\n+\r\n+const MobileNav = () => {\r\n+  return (\r\n+    <div>MobileNav</div>\r\n+  ) \r\n+}\r\n+\r\n+export default MobileNav\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731172597991,
+            "name": "Commit-0",
+            "content": "rafce"
+        }
+    ]
+}

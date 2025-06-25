@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/components/Footer/Footer.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1731204680156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731204740931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#333333] text-white py-4 mt-12 text-center\">\r\n+    <footer className=\"bg-   [#333333] text-white py-4 mt-12 text-center\">\r\n       <div>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1731204747280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-  #540d68e2] text-white py-4 mt-12 text-center\">\r\n+      <div>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204778669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,30 +3,14 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-  #540d68e2] text-white py-4 mt-12 text-center\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-4 mt-12 text-center \">\r\n       <div>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-   [#333333] text-white py-4 mt-12 text-center\">\r\n-      <div>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204785482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-4 mt-12 text-center border-t border-gray-400\">\r\n+      <div>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204801434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-12 text-center border-t border-gray-400\">\r\n+      <div>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204861568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,45 +4,13 @@\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n     <footer className=\"bg-[#540d68e2] text-white py-2 mt-12 text-center border-t border-gray-400\">\r\n-      <div>\r\n+      <div clas>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-4 mt-12 text-center border-t border-gray-400\">\r\n-      <div>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-4 mt-12 text-center \">\r\n-      <div>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204869086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n     <footer className=\"bg-[#540d68e2] text-white py-2 mt-12 text-center border-t border-gray-400\">\r\n-      <div clas>\r\n+      <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n"
+                },
+                {
+                    "date": 1731204882106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-12 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-15 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1731204888424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-15 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-18 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1731204897193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-18 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1731204919700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-23 text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204924879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,30 +3,14 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-23 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-25 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n-      <div className='text-sm'>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204931895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-30 text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731204948272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,30 +3,14 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-30 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-25 text-center border-t border-gray-400\">\r\n-      <div className='text-sm'>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206120048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[20 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1731206130872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[40px] text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206137323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[90px] text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206145415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,46 +3,14 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[90px] text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[0px] text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[40px] text-center border-t border-gray-400\">\r\n-      <div className='text-sm'>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[20 text-center border-t border-gray-400\">\r\n-      <div className='text-sm'>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206156037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-0px] text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206161130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,30 +3,14 @@\n import React from 'react';\r\n \r\n const Footer: React.FC = () => {\r\n   return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-0px] text-center border-t border-gray-400\">\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n       <div className='text-sm'>\r\n         <p>© 2024 My Portfolio. All rights reserved.</p>\r\n         <p>Built with ❤ by Aliza Moin</p>\r\n       </div>\r\n     </footer>\r\n   );\r\n };\r\n \r\n-export default Footer;\n-\"use client\";\r\n-\r\n-import React from 'react';\r\n-\r\n-const Footer: React.FC = () => {\r\n-  return (\r\n-    <footer className=\"bg-[#540d68e2] text-white py-2 mt-[0px] text-center border-t border-gray-400\">\r\n-      <div className='text-sm'>\r\n-        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n-        <p>Built with ❤ by Aliza Moin</p>\r\n-      </div>\r\n-    </footer>\r\n-  );\r\n-};\r\n-\r\n export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206173648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-1 mt-20 text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731206432599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+\"use client\";\r\n+\r\n+import React from 'react';\r\n+\r\n+const Footer: React.FC = () => {\r\n+  return (\r\n+    <footer className=\"bg-[#540d68e2] text-white py-2 mt-20 text-center border-t border-gray-400\">\r\n+      <div className='text-sm'>\r\n+        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n+        <p>Built with ❤ by Aliza Moin</p>\r\n+      </div>\r\n+    </footer>\r\n+  );\r\n+};\r\n+\r\n+export default Footer;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731204680156,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\nimport React from 'react';\r\n\r\nconst Footer: React.FC = () => {\r\n  return (\r\n    <footer className=\"bg-[#333333] text-white py-4 mt-12 text-center\">\r\n      <div>\r\n        <p>© 2024 My Portfolio. All rights reserved.</p>\r\n        <p>Built with ❤ by Aliza Moin</p>\r\n      </div>\r\n    </footer>\r\n  );\r\n};\r\n\r\nexport default Footer;"
+        }
+    ]
+}

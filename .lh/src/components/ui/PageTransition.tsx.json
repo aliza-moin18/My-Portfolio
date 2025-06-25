@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/ui/PageTransition.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1731171906996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731206351688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n        <motion.div\r\n        initial={{ opacity: 1 }}\r\n        animate={{\r\n         opacity: 0,\r\n-        transition: { delay: 1 , duration: 0.3 , ease: 'easeInOut' }\r\n+        transition: { delay: 0 , duration: 0.3 , ease: 'easeInOut' }\r\n        }}\r\n        className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n        />\r\n \r\n"
+                },
+                {
+                    "date": 1731206376342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n        <motion.div\r\n        initial={{ opacity: 1 }}\r\n        animate={{\r\n         opacity: 0,\r\n-        transition: { delay: 0 , duration: 0.3 , ease: 'easeInOut' }\r\n+        transition: { delay: 0 , duration: 0.1 , ease: 'easeInOut' }\r\n        }}\r\n        className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n        />\r\n \r\n"
+                },
+                {
+                    "date": 1731206415107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n        <motion.div\r\n        initial={{ opacity: 1 }}\r\n        animate={{\r\n         opacity: 0,\r\n-        transition: { delay: 0 , duration: 0.1 , ease: 'easeInOut' }\r\n+        transition: { delay: 0 , duration: 0.2 , ease: 'easeInOut' }\r\n        }}\r\n        className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n        />\r\n \r\n"
+                },
+                {
+                    "date": 1731430087969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,9 @@\n    </AnimatePresence>\r\n   )\r\n };\r\n \r\n-export default PageTransition;\n\\ No newline at end of file\n+export default PageTransition;\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1731430093585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,32 +1,61 @@\n-\"use client\";\r\n+// \"use client\";\r\n \r\n-import { AnimatePresence, motion } from 'framer-motion';\r\n-import { usePathname } from 'next/navigation';\r\n-import { ReactNode } from 'react';\r\n+// import { AnimatePresence, motion } from 'framer-motion';\r\n+// import { usePathname } from 'next/navigation';\r\n+// import { ReactNode } from 'react';\r\n \r\n \r\n-const PageTransition = ({ children }: { children: ReactNode }) => {\r\n-   const pathname = usePathname();\r\n-  return (\r\n-   <AnimatePresence>\r\n-    <div key={pathname}>\r\n-       <motion.div\r\n-       initial={{ opacity: 1 }}\r\n-       animate={{\r\n-        opacity: 0,\r\n-        transition: { delay: 0 , duration: 0.2 , ease: 'easeInOut' }\r\n-       }}\r\n-       className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n-       />\r\n+// const PageTransition = ({ children }: { children: ReactNode }) => {\r\n+//    const pathname = usePathname();\r\n+//   return (\r\n+//    <AnimatePresence>\r\n+//     <div key={pathname}>\r\n+//        <motion.div\r\n+//        initial={{ opacity: 1 }}\r\n+//        animate={{\r\n+//         opacity: 0,\r\n+//         transition: { delay: 0 , duration: 0.2 , ease: 'easeInOut' }\r\n+//        }}\r\n+//        className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n+//        />\r\n \r\n-    {children}   \r\n-    </div>\r\n-   </AnimatePresence>\r\n-  )\r\n-};\r\n+//     {children}   \r\n+//     </div>\r\n+//    </AnimatePresence>\r\n+//   )\r\n+// };\r\n \r\n-export default PageTransition;\r\n+// export default PageTransition;\r\n \r\n \r\n \r\n \r\n+\"use client\";\r\n+\r\n+import { AnimatePresence, motion } from \"framer-motion\";\r\n+import { usePathname } from \"next/navigation\";\r\n+import { ReactNode } from \"react\";\r\n+\r\n+const PageTransition = ({ children }: { children: ReactNode }) => {\r\n+  const pathname = usePathname();\r\n+\r\n+  return (\r\n+    <AnimatePresence initial={false}>\r\n+      {/* Key is set to pathname to trigger transition on page change */}\r\n+      <motion.div\r\n+        key={pathname}\r\n+        initial={{ opacity: 0 }}\r\n+        animate={{ opacity: 1 }}\r\n+        exit={{\r\n+          opacity: 0,\r\n+          transition: { duration: 0.3, ease: \"easeInOut\" },\r\n+        }}\r\n+        className=\"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n+      >\r\n+        {children}\r\n+      </motion.div>\r\n+    </AnimatePresence>\r\n+  );\r\n+};\r\n+\r\n+export default PageTransition;\r\n"
+                },
+                {
+                    "date": 1731430114559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,38 +24,5 @@\n //    </AnimatePresence>\r\n //   )\r\n // };\r\n \r\n-// export default PageTransition;\r\n-\r\n-\r\n-\r\n-\r\n-\"use client\";\r\n-\r\n-import { AnimatePresence, motion } from \"framer-motion\";\r\n-import { usePathname } from \"next/navigation\";\r\n-import { ReactNode } from \"react\";\r\n-\r\n-const PageTransition = ({ children }: { children: ReactNode }) => {\r\n-  const pathname = usePathname();\r\n-\r\n-  return (\r\n-    <AnimatePresence initial={false}>\r\n-      {/* Key is set to pathname to trigger transition on page change */}\r\n-      <motion.div\r\n-        key={pathname}\r\n-        initial={{ opacity: 0 }}\r\n-        animate={{ opacity: 1 }}\r\n-        exit={{\r\n-          opacity: 0,\r\n-          transition: { duration: 0.3, ease: \"easeInOut\" },\r\n-        }}\r\n-        className=\"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n-      >\r\n-        {children}\r\n-      </motion.div>\r\n-    </AnimatePresence>\r\n-  );\r\n-};\r\n-\r\n-export default PageTransition;\r\n+// export default PageTransition;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731171906996,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\nimport { AnimatePresence, motion } from 'framer-motion';\r\nimport { usePathname } from 'next/navigation';\r\nimport { ReactNode } from 'react';\r\n\r\n\r\nconst PageTransition = ({ children }: { children: ReactNode }) => {\r\n   const pathname = usePathname();\r\n  return (\r\n   <AnimatePresence>\r\n    <div key={pathname}>\r\n       <motion.div\r\n       initial={{ opacity: 1 }}\r\n       animate={{\r\n        opacity: 0,\r\n        transition: { delay: 1 , duration: 0.3 , ease: 'easeInOut' }\r\n       }}\r\n       className= \"screen w-screen fixed bg-white bg-opacity-20 backdrop-blur-lg top-0 pointer-events-none\"\r\n       />\r\n\r\n    {children}   \r\n    </div>\r\n   </AnimatePresence>\r\n  )\r\n};\r\n\r\nexport default PageTransition;"
+        }
+    ]
+}

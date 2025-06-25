@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/ui/textarea.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731207155094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731207155094,
+            "name": "Commit-0",
+            "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst Textarea = React.forwardRef<\n  HTMLTextAreaElement,\n  React.ComponentProps<\"textarea\">\n>(({ className, ...props }, ref) => {\n  return (\n    <textarea\n      className={cn(\n        \"flex min-h-[60px] w-full rounded-md border border-slate-200 bg-transparent px-3 py-2 text-base shadow-sm placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:border-slate-800 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300\",\n        className\n      )}\n      ref={ref}\n      {...props}\n    />\n  )\n})\nTextarea.displayName = \"Textarea\"\n\nexport { Textarea };"
+        }
+    ]
+}

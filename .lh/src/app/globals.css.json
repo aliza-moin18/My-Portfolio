@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/app/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1731171019674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731202056303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n-@layer base {\n- \n\\ No newline at end of file\n+@layer base \n+\n"
+                },
+                {
+                    "date": 1731202063563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,46 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n-@layer base \n \n+@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n+\n+@layer base {\n+  body {\n+    font-family: 'Roboto', sans-serif;\n+    background-color: black;\n+    color: white;\n+  }\n+  \n+  .h1 {\n+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;\n+}\n+  .h2 {\n+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;\n+  }\n+  .h3 {\n+    @apply text-[28px] xl:text-[24px] leading-[1.1] font-semibold;\n+  }\n+\n+  .text-outline {\n+    -webkit-text-stroke: 1px #ffffff;\n+  }\n+  \n+  .text-outline:hover {\n+    -webkit-text-stroke: 1px #9615db;\n+  }\n+  \n+    .tags {\n+      background-color: #540d68e2;\n+      margin-right: 50px;\n+      margin-top: 0.5rem;\n+      padding: 7px 25px;\n+      display: inline-block;\n+      color: #ffffff;\n+      font-size: 12px;\n+      margin-bottom: 8px;\n+}\n+\n+    .tags:last-child {\n+      margin-right: 0;\n+    };\n+  };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731427209584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,7 @@\n \n     .tags:last-child {\n       margin-right: 0;\n     };\n+\n+    \n   };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731428765599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,15 @@\n     .tags:last-child {\n       margin-right: 0;\n     };\n \n+    .logo {\n+      width: 80px;\n+      height: auto;\n+    }\n     \n+    @media (min-width: 768px) {\n+      .logo {\n+        width: 115px;\n+      }\n+    }\n   };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731429027344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,58 @@\n+@tailwind base;\n+@tailwind components;\n+@tailwind utilities;\n+\n+@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n+\n+@layer base {\n+  body {\n+    \n+    font-family: 'Roboto', sans-serif;\n+    background-color: black;\n+    color: white;\n+  }\n+  \n+  .h1 {\n+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;\n+}\n+  .h2 {\n+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;\n+  }\n+  .h3 {\n+    @apply text-[28px] xl:text-[24px] leading-[1.1] font-semibold;\n+  }\n+\n+  .text-outline {\n+    -webkit-text-stroke: 1px #ffffff;\n+  }\n+  \n+  .text-outline:hover {\n+    -webkit-text-stroke: 1px #9615db;\n+  }\n+  \n+    .tags {\n+      background-color: #540d68e2;\n+      margin-right: 50px;\n+      margin-top: 0.5rem;\n+      padding: 7px 25px;\n+      display: inline-block;\n+      color: #ffffff;\n+      font-size: 12px;\n+      margin-bottom: 8px;\n+}\n+\n+    .tags:last-child {\n+      margin-right: 0;\n+    };\n+\n+    .logo {\n+      width: 80px;\n+      height: auto;\n+    }\n+    \n+    @media (min-width: 768px) {\n+      .logo {\n+        width: 115px;\n+      }\n+    }\n+  };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731429046354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n \n @layer base {\n   body {\n-    \n-    font-family: 'Roboto', sans-serif;\n+    font-family: var(--font-geistSans), 'Roboto', sans-serif;\n     background-color: black;\n     color: white;\n   }\n   \n@@ -54,62 +53,5 @@\n       .logo {\n         width: 115px;\n       }\n     }\n-  };\n-@tailwind base;\n-@tailwind components;\n-@tailwind utilities;\n-\n-@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n-\n-@layer base {\n-  body {\n-    font-family: 'Roboto', sans-serif;\n-    background-color: black;\n-    color: white;\n-  }\n-  \n-  .h1 {\n-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;\n-}\n-  .h2 {\n-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;\n-  }\n-  .h3 {\n-    @apply text-[28px] xl:text-[24px] leading-[1.1] font-semibold;\n-  }\n-\n-  .text-outline {\n-    -webkit-text-stroke: 1px #ffffff;\n-  }\n-  \n-  .text-outline:hover {\n-    -webkit-text-stroke: 1px #9615db;\n-  }\n-  \n-    .tags {\n-      background-color: #540d68e2;\n-      margin-right: 50px;\n-      margin-top: 0.5rem;\n-      padding: 7px 25px;\n-      display: inline-block;\n-      color: #ffffff;\n-      font-size: 12px;\n-      margin-bottom: 8px;\n-}\n-\n-    .tags:last-child {\n-      margin-right: 0;\n-    };\n-\n-    .logo {\n-      width: 80px;\n-      height: auto;\n-    }\n-    \n-    @media (min-width: 768px) {\n-      .logo {\n-        width: 115px;\n-      }\n-    }\n   };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731429163632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n \n @layer base {\n   body {\n-    font-family: var(--font-geistSans), 'Roboto', sans-serif;\n+\n     background-color: black;\n     color: white;\n   }\n   \n"
+                },
+                {
+                    "date": 1731429237754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n \n @layer base {\n   body {\n-\n+    \n+    font-family: 'JetBrains Mono', monospace; \n     background-color: black;\n     color: white;\n   }\n   \n"
+                }
+            ],
+            "date": 1731171019674,
+            "name": "Commit-0",
+            "content": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n@layer base {\n "
+        }
+    ]
+}
