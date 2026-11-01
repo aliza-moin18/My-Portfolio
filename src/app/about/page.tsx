@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -71,7 +69,6 @@ export default function About() {
       <div className="pointer-events-none absolute -right-40 bottom-10 h-72 w-72 rounded-full bg-violet-500/[0.07] blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl">
-
         {/* About heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,7 +77,6 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="mb-10"
         >
-
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
             About <span className="text-emerald-400"> Me.</span>
           </h2>
@@ -102,9 +98,20 @@ export default function About() {
           </div>
 
           <p className="max-w-5xl text-sm leading-7 text-gray-300 sm:text-lg sm:leading-8">
-          I'm Aliza Moin — a BS Development Communication student at the University of Sindh and an AI development learner through the Governor Sindh Initiative for AI, Web 3.0 & Metaverse (GIAIC). I'm pursuing the FDE (Forward Deployed Engineering) track, where I'm developing skills in Python, AI Engineering, Agentic AI, and Full Stack Development. I work with technologies such as Python, OpenAI Agents SDK, JavaScript, TypeScript, React, Next.js, and FastAPI to build AI-powered applications, intelligent agents, and web solutions. Through my learning journey and project work, I'm exploring how AI and software can address practical business challenges. My goal is to become a Forward Deployed Engineer who can understand real-world problems and turn them into effective technical solutions.
+            I&apos;m Aliza Moin — a BS Development Communication student at the
+            University of Sindh and an AI development learner through the
+            Governor Sindh Initiative for AI, Web 3.0 &amp; Metaverse (GIAIC).
+            I&apos;m pursuing the FDE (Forward Deployed Engineering) track,
+            where I&apos;m developing skills in Python, AI Engineering, Agentic
+            AI, and Full Stack Development. I work with technologies such as
+            Python, OpenAI Agents SDK, JavaScript, TypeScript, React, Next.js,
+            and FastAPI to build AI-powered applications, intelligent agents,
+            and web solutions. Through my learning journey and project work,
+            I&apos;m exploring how AI and software can address practical
+            business challenges. My goal is to become a Forward Deployed
+            Engineer who can understand real-world problems and turn them into
+            effective technical solutions.
           </p>
-
         </motion.div>
 
         {/* Technology Stack heading */}
@@ -115,8 +122,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="mb-8 mt-16"
         >
-
-          <h3 className="mb-8 mt-40 text-2xl font-bold tracking-tight sm:text-5xl">
+          <h3 className="mb-8 mt-16 text-2xl font-bold tracking-tight sm:text-5xl">
             What I Build <span className="text-emerald-400">With.</span>
           </h3>
         </motion.div>
@@ -177,4 +183,3 @@ export default function About() {
     </section>
   );
 }
-
