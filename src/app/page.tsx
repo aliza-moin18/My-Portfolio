@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -225,7 +224,7 @@ const Home = () => {
               className="order-2 text-center lg:order-1 lg:text-left"
             >
               <p className="mb-2 text-base font-medium tracking-wide text-emerald-300">
-                Hi, I'm
+                Hi, I&apos;m
               </p>
 
               <h1 className="whitespace-nowrap text-5xl font-extrabold leading-tight tracking-[-0.06em] sm:text-6xl xl:text-[76px]">
