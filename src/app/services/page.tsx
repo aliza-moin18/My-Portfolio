@@ -1,4 +1,6 @@
+"use client";
 
+import Image from "next/image";
 
 const education = [
   {
@@ -67,11 +69,7 @@ const achievements = [
   },
 ];
 
-function SectionHeading({
-  title,
-}: {
-  title: string;
-}) {
+function SectionHeading({ title }: { title: string }) {
   return (
     <div className="mb-7">
       <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
@@ -114,9 +112,7 @@ function InfoCard({
       </div>
 
       {location && (
-        <p className="mt-2 text-sm text-gray-500">
-          {location}
-        </p>
+        <p className="mt-2 text-sm text-gray-500">{location}</p>
       )}
 
       <p className="mt-4 text-sm leading-7 text-gray-400">
@@ -130,9 +126,8 @@ export default function ExperiencePage() {
   return (
     <main className="min-h-screen bg-[#090B0D] px-5 py-20 text-white sm:px-8">
       <div className="mx-auto max-w-5xl">
-
         {/* Page Introduction */}
-        <div className="mb-16">
+        <div className="mb-12">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">
             My Journey
           </p>
@@ -160,7 +155,7 @@ export default function ExperiencePage() {
         </section>
 
         {/* Professional Experience & Leadership */}
-        <section className="mb-24 mt-24">
+        <section className="mb-16">
           <SectionHeading title="Professional Experience & Leadership" />
 
           <div className="space-y-5">
@@ -177,7 +172,7 @@ export default function ExperiencePage() {
         </section>
 
         {/* Technical Projects */}
-        <section className="mb-24 mt-20">
+        <section className="mb-16">
           <SectionHeading title="Technical Projects" />
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -229,9 +224,11 @@ export default function ExperiencePage() {
                       rel="noopener noreferrer"
                       className="block overflow-hidden rounded-xl border border-white/10"
                     >
-                      <img
+                      <Image
                         src={image}
                         alt={`${achievement.title} certificate`}
+                        width={400}
+                        height={300}
                         className="h-36 w-full object-cover transition duration-300 hover:scale-105"
                       />
                     </a>
@@ -241,7 +238,6 @@ export default function ExperiencePage() {
             ))}
           </div>
         </section>
-
       </div>
     </main>
   );
